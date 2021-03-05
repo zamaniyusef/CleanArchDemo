@@ -1,12 +1,11 @@
 ﻿namespace Keian.Web.Controllers
 {
+    using CleanArch.Application;
     using CleanArch.Application.ViewModels;
     using CleanArch.Application.ViewModels.Base;
-    using CleanArch.Domain;
     using CleanArch.Domain.Auth;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -15,12 +14,12 @@
     {
         private readonly ILoggerManager _logger;
         private readonly RoleManager<ApplicationRole> _roleManager;
-        private readonly UserManager<IdentityUser<Guid>> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IModelFactory _modelFactory;
 
         public ManagementController(ILoggerManager logger,
                                  RoleManager<ApplicationRole> roleManager,
-                                 UserManager<IdentityUser<Guid>> userManager,
+                                 UserManager<ApplicationUser> userManager,
                                  IModelFactory modelFactory)
         {
             _logger = logger;

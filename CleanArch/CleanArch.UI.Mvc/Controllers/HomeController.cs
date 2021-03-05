@@ -1,7 +1,7 @@
 ﻿namespace CleanArch.UI.Mvc.Controllers
 {
+    using CleanArch.Application;
     using CleanArch.Application.ViewModels;
-    using CleanArch.Domain;
     using Microsoft.AspNetCore.Mvc;
     using System.Diagnostics;
     public class HomeController : Controller

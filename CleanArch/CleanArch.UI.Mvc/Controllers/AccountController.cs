@@ -1,7 +1,7 @@
 ﻿namespace Keian.Web.Controllers
 {
+    using CleanArch.Application;
     using CleanArch.Application.ViewModels;
-    using CleanArch.Domain;
     using CleanArch.Domain.Auth;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
