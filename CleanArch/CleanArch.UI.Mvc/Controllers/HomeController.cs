@@ -1,19 +1,14 @@
-﻿using CleanArch.UI.Mvc.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace CleanArch.UI.Mvc.Controllers
+﻿namespace CleanArch.UI.Mvc.Controllers
 {
+    using CleanArch.Application.ViewModels;
+    using CleanArch.Domain;
+    using Microsoft.AspNetCore.Mvc;
+    using System.Diagnostics;
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILoggerManager _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILoggerManager logger)
         {
             _logger = logger;
         }

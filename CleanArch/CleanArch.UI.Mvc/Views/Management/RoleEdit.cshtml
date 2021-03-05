@@ -1,0 +1,58 @@
+﻿@model RoleViewModel
+@{
+    ViewData["Title"] = "ویرایش نقش";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form class="col" asp-action="RoleEdit" asp-controller="Management" method="post">
+            <h4 class="text-muted">ویرایش نقش</h4>
+            <br />
+            <div class="form-label-group">
+                <input asp-for="Name" class="form-control" placeholder="نام" autofocus>
+                <label asp-for="Name"></label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-label-group">
+                <input asp-for="PersianName" class="form-control" placeholder="نام‌فارسی">
+                <label asp-for="PersianName"></label>
+                <span asp-validation-for="PersianName" class="text-danger"></span>
+            </div>
+            <div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">کاربران این نقش</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Users.Any())
+                        {
+                            foreach (var user in Model.Users)
+                            {
+                                <tr>
+                                    <td>@user</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td>هنوز برای این نقش کاربری ثبت نشده‌است</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <a asp-action="EditUsersInRole"
+               asp-controller="Management"
+               asp-route-roleId="@Model.Id"
+               class="btn btn-outline-success btn-lg btn-block">
+                مدیریت کاربران این نقش
+                <span class="iconly iconly-brokenAdd-User"></span>
+            </a>
+            <input type="submit" class="btn btn-warning btn-lg btn-block" value="ثبت تغییرات‌">
+        </form>
+    </div>
+</div>
+

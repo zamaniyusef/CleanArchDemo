@@ -1,0 +1,28 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "ورود";
+}
+
+<form class="form-signin" method="post" autocomplete="off">
+    <img class="mb-4" src="/images/keiana.png" alt="" width="300">
+    <h1 class="h3 mb-3 font-weight-normal">لطفاً وارد شوید</h1>
+
+    <div asp-validation-summary="All" class="text-danger text-center"></div>
+
+    <label asp-for="Mobile" class="sr-only"></label>
+    <input asp-for="Mobile" class="form-control" placeholder="موبایل" autofocus>
+    <span asp-validation-for="Mobile" class="text-danger"></span>
+
+    <label asp-for="Password" class="sr-only"></label>
+    <input asp-for="Password" class="form-control" placeholder="کلمه‌عبور">
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <div class="custom-control custom-checkbox mb-3">
+        <input asp-for="RememberMe" class="custom-control-input">
+        <label asp-for="RememberMe" class="custom-control-label"></label>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">ورود</button>
+</form>
+
+

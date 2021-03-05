@@ -1,0 +1,25 @@
+﻿@model RoleViewModel
+@{
+    ViewData["Title"] = "درج نقش";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <form class="col" asp-action="RoleCreate" asp-controller="Management" method="post">
+            <h4 class="text-muted">درج نقش</h4>
+            <br />
+            <div class="form-label-group">
+                <input asp-for="Name" class="form-control" placeholder="نام" autofocus>
+                <label asp-for="Name"></label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-label-group">
+                <input asp-for="PersianName" class="form-control" placeholder="نام‌فارسی">
+                <label asp-for="PersianName"></label>
+                <span asp-validation-for="PersianName" class="text-danger"></span>
+            </div>
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="ثبت‌">
+        </form>
+    </div>
+</div>
+

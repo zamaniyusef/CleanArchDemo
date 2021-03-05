@@ -1,6 +1,4 @@
-using System;
-
-namespace CleanArch.UI.Mvc.Models
+namespace CleanArch.Application.ViewModels
 {
     public class ErrorViewModel
     {

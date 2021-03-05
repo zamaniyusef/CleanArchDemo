@@ -15,13 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Mvc", "CleanArch.UI.Mvc\CleanArch.Mvc.csproj", "{15C6CA13-F771-45FD-A0FE-BD064B7FA1C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{C5397BF8-C115-41E0-AD31-D25B36E71DFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{C5397BF8-C115-41E0-AD31-D25B36E71DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{9D3FD6CD-A545-421E-9C4B-F406DE0DC8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{9D3FD6CD-A545-421E-9C4B-F406DE0DC8BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{AB1DCBBF-64A9-424E-A966-80A8B7253669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{AB1DCBBF-64A9-424E-A966-80A8B7253669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC\CleanArch.Infra.IoC.csproj", "{67D636ED-D071-48BC-980F-CFA6E1038473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC\CleanArch.Infra.IoC.csproj", "{67D636ED-D071-48BC-980F-CFA6E1038473}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logger", "Logger", "{308AA048-F170-41B0-B200-2647CBF919EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.LoggerService", "LoggerService\CleanArch.LoggerService.csproj", "{3C491A27-E721-42A9-8054-B00A9E85AB28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{67D636ED-D071-48BC-980F-CFA6E1038473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67D636ED-D071-48BC-980F-CFA6E1038473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67D636ED-D071-48BC-980F-CFA6E1038473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C491A27-E721-42A9-8054-B00A9E85AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C491A27-E721-42A9-8054-B00A9E85AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C491A27-E721-42A9-8054-B00A9E85AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C491A27-E721-42A9-8054-B00A9E85AB28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,7 @@ Global
 		{9D3FD6CD-A545-421E-9C4B-F406DE0DC8BF} = {C8917EC2-A71A-4B06-A982-137B036D21D7}
 		{AB1DCBBF-64A9-424E-A966-80A8B7253669} = {9A21047C-E71E-4735-96F3-683CBF503833}
 		{67D636ED-D071-48BC-980F-CFA6E1038473} = {B2E52B94-62DF-4F03-BD22-FD4B55F95B8D}
+		{3C491A27-E721-42A9-8054-B00A9E85AB28} = {308AA048-F170-41B0-B200-2647CBF919EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07D0BC6A-58F0-4FA5-B129-0CB492C2153F}
